@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Shrink Circles</title>
+    <script src="https://connect.facebook.net/en_US/fbinstant.6.2.js"></script>
+</head>
+
+<body>
+
+    <span class='begin'></span>
+
+    <section class="menu">
+        <h1>Shrink Circles</h1>
+        <button class="play">Play!</button>
+        <button class="btn-instructions">Instructions</button>
+        <button class='btn-settings'>Settings</button>
+        <div class="chosenDifficulty">Chosen difficulty: <b>Easy</b></div>
+    </section>
+
+    <section class="instructions">
+        <h2>Instructions:</h2>
+        <p>Hover Over the circles to shrink them.</p>
+        <p>If 5 circles are on the screen, you lose!</p>
+        <button class="back">Back</button>
+    </section>
+
+    <section class="settings">
+        <h2>Difficulty:</h2>
+        <div class="difficulty">
+            <div class="easy active"></div>
+            <div class="normal"></div>
+            <div class="hard"></div>
+            <div class="hardcore"></div>
+        </div>
+
+        <button class="back">Back</button>
+    </section>
+
+    <section class='gameOver'>
+        <h1>Game Over!</h1>
+        <p>Your score was: <span>0</span></p>
+        <button class="back">Back</button>
+    </section>
+
+    <div class="gameBar">
+        <div class="score">Score: <span>0</span></div>
+        <div class="activeCircles">Active circles: <span>1</span></div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script type="module" src="js/menuBackground.js"></script>
+    <script src="js/menu.js"></script>
+    <script type="module" src="js/game.js"></script>
+</body>
+
+</html>

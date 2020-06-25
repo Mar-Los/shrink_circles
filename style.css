@@ -1,0 +1,196 @@
+/* TABLE OF CONTENTS:
+    global
+    menu
+    settings
+    gameOver
+    gameBar
+    other
+    */
+
+/* GLOBAL*/
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;    
+    font-family: sans-serif;
+    color: #2a2b2e;
+    background: #f5f1ed;
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    min-width: 375px;
+    width: 50vw;
+    max-width: 500px;
+    background: #f5bb00;
+    border-radius: 25px;
+    display: none;
+    flex-direction: column;
+    padding: 25px;    
+    align-items: center;        
+}
+
+button {
+    background-color: #8ea604;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.15rem; 
+    box-shadow: 2px 4px 0 #7e9600;    
+    transition: .2s;    
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+button:hover{
+    box-shadow: 0px 1px 0 #7e9600;
+    transform: translate(2px, 3px);
+}
+
+button.back{        
+    width: 100px;
+    height: 30px;      
+    margin-top: auto;       
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 2.3rem;    
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+p{
+    font-size: 1.15rem;     
+    margin-bottom: .3em;   
+    text-align: center;
+}
+
+/*MENU*/
+
+.menu{    
+    display: flex;
+}
+
+.menu button{      
+    margin-bottom: 1em;
+    width: 200px;
+    height: 40px;
+}
+
+/*SETTINGS*/
+
+.settings{
+    display: none;    
+}
+
+.settings h2 {
+    margin-bottom: 2.5rem;
+}
+
+.settings .difficulty {
+    margin-bottom: 1.5rem;
+    height: 25px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #2a2b2e;
+    display: flex;
+}
+
+.difficulty div{
+    height: 100%;
+    width: 75px;
+    position: relative;
+    font-size: 1.1rem;   
+    transition: .2s ease-out; 
+    cursor: pointer;
+}
+.difficulty div::before{
+    position: absolute;    
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);        
+}
+
+
+.easy{    
+    background-color: #7e9600;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 3px solid #2a2b2e;
+}
+.easy::before{
+    content: 'easy';
+}
+
+
+.normal{
+    background-color: #ff9f1c;
+}
+.normal::before{
+    content: 'normal';
+}
+
+
+.hard{
+    background-color: #ff4e00;
+}
+.hard::before{
+    content: 'hard';
+}
+
+
+.hardcore{
+    background-color: #bf3100;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.hardcore::before{
+    content: 'hardcore';
+}
+
+/*GAMEOVER*/
+
+
+/*GAMEBAR*/
+
+.gameBar{    
+    position: fixed;
+    bottom: 0;
+    display: none;
+    justify-content: space-evenly;    
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.1rem;
+    background: #7e9600;
+}
+
+/*OTHER*/
+
+.begin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+    font-size: 20rem;
+    color: #bf3100;    
+}
