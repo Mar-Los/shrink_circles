@@ -3,5 +3,5 @@ An arcade javascript browser game created using js classes and modules. It runs 
 
 ## Features
 - Game using JS Canvas API
-- an option to change difficulty
-- programmatically created menu background
+- An option to change difficulty
+- Randomly created menu background
