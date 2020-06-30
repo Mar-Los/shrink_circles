@@ -1,5 +1,5 @@
 # Shrink Circles
-An arcade javascript browser game created using js classes. It runs live at [this website](http://circles.titanus.cz). Only mouse behaviour is implemented at the moment, so the game can't be played on a mobile phone.
+A javascript browser game created using js classes. It runs live at [this website](http://circles.titanus.cz). Only mouse behaviour is implemented at the moment, so the game can't be played on a mobile phone.
 
 ## Features
 - Clear design using JS classes
